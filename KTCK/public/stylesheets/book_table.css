@@ -1,0 +1,159 @@
+.container-main{
+    margin-top: 60px;
+    width: 100%;
+    align-items: center;
+    color: cyan;
+    font-size: 20px;
+}
+.booking{
+    height: 250px;
+    width:100%;
+    background-image: url("/images/nen-restaurant-da-nan-142812.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.booking h2{
+    font-size: 40px;
+    color: cyan;
+}
+#myTime{
+    float: left;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: hidden;
+    height: 50px;
+   border-radius: 5px;
+   margin-right: 4px;
+}
+#myDate{
+    float: left;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: hidden;
+    height: 50px;
+   border-radius: 5px;
+   margin-right: 4px;
+
+}
+.many{
+    float: left;
+    margin-right:4px;
+}
+.many .form-control{
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: hidden;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.modal-content .modal-body {
+    color: black;
+}
+.text-box{
+    float: left;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 50px;
+   
+}
+.text-box .btn{
+    background-color: green;
+    font-size: 15px;
+}
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: absolute;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+    background-color: #fff;
+    color: #777;
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn-white::after {
+    background-color: #fff;
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.btn-animated {
+    animation: moveInBottom 5s ease-out;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.time{
+    text-align: center;
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+h2{
+    padding-top: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    color: #fff;
+    
+}
+.time{
+    padding-top: 50px;
+    padding-left: 200px;
+}
+#type{
+    float: left;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: hidden;
+    height: 50px;
+   border-radius: 5px;
+   margin-right: 4px;
+}
+.choose{
+    float: left;
+    margin-right: 10px;
+    margin-left: 10PX;
+}

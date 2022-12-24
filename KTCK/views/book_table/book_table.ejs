@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Table</title>
+    <link rel="stylesheet" href="/stylesheets/header.css">
+    <link rel="stylesheet" href="/stylesheets/footer.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="/stylesheets/book_table.css">
+    <link rel="stylesheet" href="/stylesheets/all.min.css">
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+</head>
+<body>
+    <%-include("header") %>
+    <div class="container-main">
+        <div class="booking text-center">
+          <h2>
+            Booking Table
+          </h2>
+          <div class="time">
+            <input type="date" name="" id="myDate">
+            <input type="time" name="" id="myTime">
+            <div class="many">
+              <select name="" id="" class="form-control">
+                <option value="none">1 people </option>
+                <option value="">2 people </option>
+                <option value="">3 people </option>
+                <option value="">4 people </option>
+                <option value="">5 people </option>
+                <option value="">6 people </option>
+                <option value="">7 people </option>
+                <option value="">8 people </option>
+                <option value="">9 people </option>
+                <option value="">10 people </option>
+                <option value="">large party </option>
+    
+              </select>
+            </div>
+            <input type="text" id="type" placeholder="Full Name">
+            <div class="choose">
+              <label for="usThich">Chọn món ăn:</label>
+              <br>
+              <input type="checkbox" name="sothich" id="usThich" value="Pho"> menu
+              <input type="checkbox" data-toggle="modal" data-target="#exampleModal"> other
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Food List</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <label for="usThich">Dessert:</label>
+                      <li><input type="checkbox" name="" id=""> dish 1</li>
+                      <li><input type="checkbox" name="" id=""> dish 2</li>
+                      <li><input type="checkbox" name="" id=""> dish 3</li>
+                      <li><input type="checkbox" name="" id=""> dish 4</li>
+                      <li><input type="checkbox" name="" id=""> dish 5</li>
+                      <label for="usThich">Main Corse:</label>
+                      <li><input type="checkbox" name="" id=""> dish 1</li>
+                      <li><input type="checkbox" name="" id=""> dish 2</li>
+                      <li><input type="checkbox" name="" id=""> dish 3</li>
+                      <li><input type="checkbox" name="" id=""> dish 4</li>
+                      <li><input type="checkbox" name="" id=""> dish 5</li>
+                      <label for="usThich">Desserts:</label>
+                      <li><input type="checkbox" name="" id=""> dish 1</li>
+                      <li><input type="checkbox" name="" id=""> dish 2</li>
+                      <li><input type="checkbox" name="" id=""> dish 3</li>
+                      <li><input type="checkbox" name="" id=""> dish 4</li>
+                      <li><input type="checkbox" name="" id=""> dish 5</li>
+    
+                      
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="text-box">
+              <a href="#" class="btn btn-white btn-animate">book now !!!</a>
+            </div>
+    
+          </div>
+    
+        </div>
+      </div>
+    <%-include("footer") %>
+  
+    <!-- lien ket js -->
+    <script src="/javascripts/book_table.js"></script>
+    <script src="/javascripts/jquery.slim.min.js"></script>
+    <script src="/javascripts/popper.min.js"></script>
+    <script src="/javascripts/bootstrap.min.js"></script>
+    <script src="/javascripts/home.js"></script>
+  </body>
+</html>
